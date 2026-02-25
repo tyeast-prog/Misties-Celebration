@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mistie's Day of Celebration</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero">
+    <p class="hero-label">You're Invited</p>
+    <h1 class="hero-name">Mistie's Day<br>of Celebration</h1>
+    <p class="hero-subtitle">An afternoon &amp; evening of fragrance, song &amp; good company</p>
+    <span class="hero-date">Saturday, March 7, 2026</span>
+  </section>
+
+  <!-- ══════════ COUNTDOWN ══════════ -->
+  <section class="countdown-section section">
+    <div class="container">
+      <h2 class="section-title">The Countdown Is On</h2>
+      <div class="countdown" id="countdown">
+        <div class="countdown-unit">
+          <span class="count-number" id="cd-days">00</span>
+          <span class="count-label">Days</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-unit">
+          <span class="count-number" id="cd-hours">00</span>
+          <span class="count-label">Hours</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-unit">
+          <span class="count-number" id="cd-mins">00</span>
+          <span class="count-label">Minutes</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-unit">
+          <span class="count-number" id="cd-secs">00</span>
+          <span class="count-label">Seconds</span>
+        </div>
+      </div>
+      <p class="countdown-message" id="cd-message"></p>
+    </div>
+  </section>
+
+  <!-- ══════════ PARTY DETAILS ══════════ -->
+  <section class="schedule-section section">
+    <div class="container">
+      <h2 class="section-title">Party Details</h2>
+      <div class="activities-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+        <div class="activity-card">
+          <div class="activity-icon">&#128197;</div>
+          <div class="activity-title">Date</div>
+          <div class="activity-desc">Saturday<br>March 7, 2026</div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">&#128336;</div>
+          <div class="activity-title">Time</div>
+          <div class="activity-desc">3:30 PM &mdash; Until</div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">&#128205;</div>
+          <div class="activity-title">Venues</div>
+          <div class="activity-desc">Multiple locations<br>in Tampa</div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">&#128087;</div>
+          <div class="activity-title">Dress Code</div>
+          <div class="activity-desc">Come As You Are</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ornament">&#10040; &nbsp; &#10040; &nbsp; &#10040;</div>
+
+  <!-- ══════════ ACTIVITIES ══════════ -->
+  <section class="schedule-section section" style="padding-top:2rem;">
+    <div class="container">
+      <h2 class="section-title">The Day's Festivities</h2>
+      <p class="section-subtitle">Three celebrations, one unforgettable day</p>
+
+      <div class="activities-grid">
+        <!-- Fragrance -->
+        <div class="activity-card">
+          <span class="activity-time-badge">3:30 PM</span>
+          <div class="activity-icon">&#127804;</div>
+          <div class="activity-title">Fragrance Making</div>
+          <div class="activity-desc">Create your own signature scent at Tijon's hands-on fragrance lab in historic Ybor City. Spots are limited &mdash; you must register directly using the link below.</div>
+          <div class="activity-location">Tijon &mdash; 2015 E 7th Ave, Tampa, FL 33605</div>
+          <a class="btn-activity" href="https://tijon.com/pages/class-sign-up-tampa" target="_blank">Book Your Spot</a>
+          <div class="activity-booking-note">After booking, please also check the box in the RSVP form below so Mistie knows you'll be there!</div>
+        </div>
+
+        <!-- Karaoke -->
+        <div class="activity-card">
+          <span class="activity-time-badge">6:00 &ndash; 9:00 PM</span>
+          <div class="activity-icon">&#127908;</div>
+          <div class="activity-title">Private Karaoke</div>
+          <div class="activity-desc">Sing your heart out with us in a private themed room at LALA Tampa. Good vibes, legendary songs, and memories that'll last forever. All skill levels welcome!</div>
+          <div class="activity-location">LALA Tampa &mdash; 208 S Howard Ave, Tampa, FL 33606</div>
+          <div class="activity-booking-note">A full food and drink menu is available on-site &mdash; treat yourself to a bite and a cocktail while you sing the night away!</div>
+        </div>
+
+        <!-- Lounge -->
+        <div class="activity-card">
+          <span class="activity-time-badge">9:00 PM &ndash; Until</span>
+          <div class="activity-icon">&#127864;</div>
+          <div class="activity-title">Lounge Time</div>
+          <div class="activity-desc">Wind down (or keep the party going!) with drinks and good vibes into the night. We'll be making a reservation &mdash; please let us know if you're joining so we can hold your spot!</div>
+          <div class="activity-location">Location TBD &mdash; details coming soon</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ornament">&#10040; &nbsp; &#10040; &nbsp; &#10040;</div>
+
+  <!-- ══════════ RSVP FORM ══════════ -->
+  <section class="rsvp-section section" id="rsvp-section">
+    <div class="container">
+      <h2 class="section-title">RSVP</h2>
+      <p class="section-subtitle">Let Mistie know you're coming!</p>
+
+      <!-- The Form -->
+      <form class="rsvp-form" id="rsvp-form" novalidate>
+
+        <!-- Your Info -->
+        <fieldset class="form-fieldset">
+          <legend>Your Info</legend>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="rsvp-name">Name <span class="required">*</span></label>
+              <input type="text" id="rsvp-name" placeholder="Your full name" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="rsvp-phone">Phone <span class="optional">(for updates)</span></label>
+              <input type="tel" id="rsvp-phone" placeholder="(555) 123-4567">
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Activities -->
+        <fieldset class="form-fieldset activities-fieldset">
+          <legend>Which Activities Will You Attend?</legend>
+          <p class="fieldset-note">Check all that you plan to join.</p>
+
+          <!-- Fragrance -->
+          <div class="activity-rsvp-row">
+            <div class="activity-rsvp-meta">
+              <span class="activity-rsvp-emoji">&#129520;</span>
+              <div>
+                <strong>Fragrance Making</strong>
+                <span class="activity-rsvp-time">3:30 PM &mdash; Tijon, Ybor City</span>
+              </div>
+            </div>
+            <label class="checkbox-label">
+              <input type="checkbox" id="rsvp-fragrance">
+              <span class="checkbox-box"></span>
+              <span class="checkbox-text">I'll be there!</span>
+            </label>
+            <p class="activity-rsvp-hint">Space is limited. Please book your spot:<br>
+              <a href="https://tijon.com/pages/class-sign-up-tampa" id="fragrance-book-link" target="_blank" style="font-weight:600;">Book Mix &amp; Match Class (90 mins) at Tijon &rarr;</a>
+            </p>
+          </div>
+
+          <hr class="activity-rsvp-divider">
+
+          <!-- Karaoke -->
+          <div class="activity-rsvp-row">
+            <div class="activity-rsvp-meta">
+              <span class="activity-rsvp-emoji">&#127908;</span>
+              <div>
+                <strong>Private Karaoke</strong>
+                <span class="activity-rsvp-time">6:00 &ndash; 9:00 PM &mdash; LALA Tampa, SoHo</span>
+              </div>
+            </div>
+            <label class="checkbox-label">
+              <input type="checkbox" id="rsvp-karaoke">
+              <span class="checkbox-box"></span>
+              <span class="checkbox-text">Count me in!</span>
+            </label>
+          </div>
+
+          <hr class="activity-rsvp-divider">
+
+          <!-- Lounge -->
+          <div class="activity-rsvp-row">
+            <div class="activity-rsvp-meta">
+              <span class="activity-rsvp-emoji">&#127864;</span>
+              <div>
+                <strong>Lounge Time</strong>
+                <span class="activity-rsvp-time">9:00 PM &ndash; Until &mdash; Location TBD</span>
+              </div>
+            </div>
+            <label class="checkbox-label">
+              <input type="checkbox" id="rsvp-lounge">
+              <span class="checkbox-box"></span>
+              <span class="checkbox-text">I'm staying out!</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Message -->
+        <fieldset class="form-fieldset">
+          <legend>Anything Else?</legend>
+          <div class="form-group">
+            <label for="rsvp-message">Message for Mistie <span class="optional">(optional)</span></label>
+            <textarea id="rsvp-message" placeholder="Birthday wishes, questions, song requests..."></textarea>
+          </div>
+        </fieldset>
+
+        <!-- Submit -->
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Send My RSVP</button>
+          <span class="form-sending" id="form-sending" style="display:none;">Sending...</span>
+          <span class="form-error" id="form-error" style="display:none;"></span>
+        </div>
+      </form>
+
+      <!-- Success Screen -->
+      <div class="rsvp-success" id="rsvp-success" style="display:none;">
+        <div class="success-icon">&#127881;</div>
+        <h3>You're In!</h3>
+        <p id="success-text">Thanks for your RSVP. Mistie can't wait to celebrate with you!</p>
+        <div class="fragrance-reminder" id="fragrance-reminder" style="display:none;">
+          Don't forget to book your fragrance session at Tijon &mdash; space is limited!
+        </div>
+        <button class="btn btn-outline" id="btn-edit-rsvp">Edit My RSVP</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="ornament">&#10040; &nbsp; &#10040; &nbsp; &#10040;</div>
+    <p>Mistie's Day of Celebration &mdash; March 7, 2026</p>
+    <p>Questions? Reach out to Mistie directly.</p>
+    <div class="ornament">&#10040; &nbsp; &#10040; &nbsp; &#10040;</div>
+    <p class="footer-note">Made with love for a day to remember.</p>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/invite.js"></script>
+</body>
+</html>
